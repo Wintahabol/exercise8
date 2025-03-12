@@ -11,27 +11,35 @@
       body {
         font-family: "Pacifico", cursive;
         font-size: 30px;
-        background-color: aqua;
+        background-color: "aqua";
       }
 
       /* Responsive Design Additions */
       /* phone screen */
-      @media screen and(min-width: 600px) {
-
+      @media screen and(max-width: 600px) {
+        body {
+          font-size: 0.75em;
+          background-color: yellow;
+        }
+        
         img,
         p {
           width: 100%;
           height: auto;
-          background-color: yellow;
         }
       }
-      
+
+      /* desktop screen */
       @media screen and (min-width: 601px) {
+        body {
+          background-color: aqua;
+        }
+        
         img {
           width: 800px;
         }
-        
-        p{
+
+        p {
           width: 600px;
         }
       }
